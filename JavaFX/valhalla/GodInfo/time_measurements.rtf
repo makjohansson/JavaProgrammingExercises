@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14900\viewh10660\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Time measurement concatenation short string:\
+	1. Number of concatenations: 10000\
+	2. Final string length: 10000\
+\
+Time measurement StringBuilder short string:\
+	1. Number of appends: \
+	2. Final string length:\
+\
+Time measurement concatenation long string:\
+	1. Number of concatenations:\
+	2. Final string length: \
+\
+Time measurement StringBuilder long string:\
+	1. Number of appends:\
+	2. Final string length:\
+\
+\
+Result from 
+\f1 ShortStringConcatenation\
+
+\f0 	Warming up\
+	 Num of con: 100000  String length: 100000   Time: 1050 nano   Mem: 297 MB\
+	 Num of con: 100000  String length: 100000   Time: 1077 nano   Mem: 110 MB\
+	 Num of con: 100000  String length: 100000   Time: 1102 nano   Mem: 124 MB
+\f1 \
+	
+\f0  Num of con: 100000  String length: 100000   Time: 1045 nano   Mem: 147 MB\
+ 	 Num of con: 100000  String length: 100000   Time: 1093 nano   Mem: 100 MB\
+	Actual run\
+	 Num of con: 80000  String length: 80000   Time: 735 nano   Mem: 180 MB\
+	 Num of con: 85000  String length: 85000   Time: 832 nano   Mem: 209 MB\
+	 Num of con: 90000  String length: 90000   Time: 861 nano   Mem: 283 MB\
+
+\f1 	
+\f0  Num of con: 95000  String length: 95000   Time: 989 nano   Mem: 159 MB\
+	 Num of con: 100000  String length: 100000   Time: 1050 nano   Mem: 297 MB\
+	 Num of con: 105000  String length: 105000   Time: 1135 nano   Mem: 352 MB\
+	 Num of con: 110000  String length: 110000   Time: 1303 nano   Mem: 297 MB\
+	 Num of con: 115000  String length: 115000   Time: 1442 nano   Mem: 297 MB\
+	 Num of con: 120000  String length: 120000   Time: 1555 nano   Mem: 253 MB
+\f1 \
+\
+\
+
+\f0 Result from 
+\f1 ShortStringStringBuilder\
+	
+\f0 Warming up\
+	 Num of app: 340000000  String length: 340000000   Time: 1050 nano   Mem: 909 MB\
+	 Num of app: 320000000  String length: 320000000   Time: 1040 nano   Mem: 909 MB\
+	 Num of app: 320000000  String length: 320000000   Time: 1007 nano   Mem: 909 MB\
+	 Num of app: 300000000  String length: 300000000   Time: 907 nano   Mem: 456 MB\
+	 Num of app: 290000000  String length: 290000000   Time: 893 nano   Mem: 909 MB\
+	Actual run\
+	 Num of app: 280000000  String length: 280000000   Time: 867 nano   Mem: 456 MB\
+	 Num of app: 285000000  String length: 285000000   Time: 876 nano   Mem: 437 MB\
+	 Num of app: 290000000  String length: 290000000   Time: 880 nano   Mem: 456 MB\
+	 Num of app: 295000000  String length: 295000000   Time: 892 nano   Mem: 456 MB\
+	 Num of app: 300000000  String length: 300000000   Time: 904 nano   Mem: 456 MB\
+	 Num of app: 305000000  String length: 305000000   Time: 966 nano   Mem: 909 MB\
+	 Num of app: 310000000  String length: 310000000   Time: 1008 nano   Mem: 909 MB\
+	 Num of app: 315000000  String length: 315000000   Time: 1036 nano   Mem: 909 MB\
+	 Num of app: 320000000  String length: 320000000   Time: 1054 nano   Mem: 909 MB\
+	 Num of app: 325000000  String length: 325000000   Time: 1056 nano   Mem: 909 MB\
+	 Num of app: 330000000  String length: 330000000   Time: 1085 nano   Mem: 909 MB\
+	 Num of app: 340000000  String length: 340000000   Time: 1107 nano   Mem: 909 MB\
+	 Num of app: 350000000  String length: 350000000   Time: 1130 nano   Mem: 909 MB\
+\
+Result from 
+\f1 LongStringConcatenation\
+	Warming up\
+	
+\f0 Num of con: 6000  String length: 480000   Time: 611 nano   Mem: 28 MB\
+	Num of con: 7000  String length: 560000   Time: 830 nano   Mem: 121 MB\
+	Num of con: 7500  String length: 600000   Time: 964 nano   Mem: 218 MB\
+	Num of con: 7600  String length: 608000   Time: 1016 nano   Mem: 302 MB\
+	Num of con: 8000  String length: 640000   Time: 1126 nano   Mem: 319 MB\
+	Actual run\
+	Num of con: 6000  String length: 480000   Time: 637 nano   Mem: 309 MB\
+	Num of con: 6500  String length: 520000   Time: 705 nano   Mem: 432 MB\
+	Num of con: 7000  String length: 560000   Time: 856 nano   Mem: 215 MB\
+	Num of con: 7200  String length: 576000   Time: 879 nano   Mem: 43 MB\
+	Num of con: 7300  String length: 584000   Time: 932 nano   Mem: 272 MB\
+	Num of con: 7500  String length: 600000   Time: 988 nano   Mem: 269 MB\
+	Num of con: 7700  String length: 616000   Time: 1013 nano   Mem: 273 MB\
+	Num of con: 7800  String length: 624000   Time: 1063 nano   Mem: 30 MB\
+	Num of con: 8000  String length: 640000   Time: 1113 nano   Mem: 290 MB\
+	Num of con: 8500  String length: 680000   Time: 1255 nano   Mem: 331 MB\
+	Num of con: 9000  String length: 720000   Time: 1402 nano   Mem: 51 MB\
+		\
+\
+Result from 
+\f1 LongStringStringBuilder\
+	Warming up\
+	
+\f0 Num of app: 
+\f1 17300000
+\f0  String length: 
+\f1 1360000000
+\f0    Time: 688 nano   Mem: 2066 MB
+\f1 \
+	
+\f0 Num of app: 
+\f1 17400000
+\f0  String length: 
+\f1 1392000000
+\f0    Time: 1624nano   Mem: 3526 MB\
+	Num of app: 
+\f1 17350000
+\f0  String length: 
+\f1 1388000000
+\f0    Time: 1284 nano   Mem: 3526 MB\
+	Num of app: 
+\f1 17330000
+\f0  String length: 
+\f1 1386400000
+\f0    Time: 1119 nano   Mem: 3526 MB\
+	Num of app: 
+\f1 17310000
+\f0  String length: 
+\f1 1384800000
+\f0    Time: 1174 nano   Mem: 3526 MB\
+	Actual run\
+	Num of app: 
+\f1 17000000
+\f0  String length: 
+\f1 1360000000
+\f0    Time: 701 nano   Mem: 2066 MB\
+	Num of app: 
+\f1 17100000
+\f0  String length: 
+\f1 1368000000
+\f0    Time: 683 nano   Mem: 2066 MB\
+	Num of app: 
+\f1 17150000
+\f0  String length: 
+\f1 1376000000
+\f0    Time: 687 nano   Mem: 2066 MB\
+	Num of app: 
+\f1 17180000
+\f0  String length: 
+\f1 1374400000
+\f0    Time: 695 nano   Mem: 2066 MB\
+	Num of app: 
+\f1 17200000
+\f0  String length: 
+\f1 1380000000
+\f0    Time: 1098 nano   Mem: 3526 MB\
+	Num of app: 
+\f1 17250000
+\f0  String length: 
+\f1 1376000000
+\f0    Time: 1111 nano   Mem: 3526 MB\
+	Num of app: 
+\f1 17280000
+\f0  String length: 
+\f1 1382400000
+\f0    Time: 1131 nano   Mem: 3526 MB\
+	Num of app: 
+\f1 17300000
+\f0  String length: 
+\f1 1384000000
+\f0    Time: 1361 nano   Mem: 3526 MB\
+	Num of app: 
+\f1 17400000
+\f0  String length: 
+\f1 1392000000
+\f0    Time: 1213 nano   Mem: 3526 MB\
+	
+\f1 \
+\
+\
+\
+}
